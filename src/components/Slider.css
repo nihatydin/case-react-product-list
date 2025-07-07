@@ -1,0 +1,56 @@
+.slider-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 0 0 10px;
+  flex: 1;
+}
+
+.slider-track {
+  display: flex;
+  gap: 70px;
+  padding: 0 10px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  max-width: 260px;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+/*
+.arrow.left {
+}
+.arrow.right {
+}
+*/
+
+/* sliderın responsive olması için */
+@media only screen and (max-width: 600px) {
+  .slider-track {
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .slide {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 280px;
+  }
+}
